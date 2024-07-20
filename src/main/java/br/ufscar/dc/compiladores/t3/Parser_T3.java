@@ -46,7 +46,7 @@ public class Parser_T3 extends LABaseVisitor<Void> {
             adicionaErroSemantico(nomeT, "identificador " + nome + " ja declarado anteriormente");
     }
 
-    // Inicio da análise sintática
+    // Inicio da análise semântica
     @Override
     public Void visitPrograma(LAParser.ProgramaContext ctx) {
         tabela = new TabelaDeSimbolos();
